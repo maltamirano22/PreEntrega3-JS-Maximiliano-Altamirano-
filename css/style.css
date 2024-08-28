@@ -1,0 +1,70 @@
+:root{
+    --color-acento: rgba(219, 95, 23, 0.616);
+    --color-acento-claro: rgb(252, 210, 133);
+    --color-texto: black;
+}
+h3, p {
+    margin: 10px;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: var(--color-texto);
+}
+a:hover:not(#cart){
+color:var(--color-acento);
+}
+
+button{
+
+    background-color: var(--color-acento);
+    color: white;   
+    padding: 5px 10px;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+}
+header{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.089);
+    padding: 10px 0;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+header nav div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+
+}
+
+#cuenta-carrito{
+    background-color: var(--color-acento);
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    position: absolute;
+}
+#logo {
+    height: 40px;
+    }
+header nav img {
+    height: 25px;
+}
+footer{
+    text-align: center;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.089);
+    margin-top: auto;
+}
