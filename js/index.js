@@ -6,7 +6,7 @@ function crearTarjetasProductosInicio (stockProductos){
         const nuevoProducto =  document.createElement("div");
         nuevoProducto.classList = "tarjeta-producto";
         nuevoProducto.innerHTML = `
-        <img src="../assets/images/productos/${producto.id}.png">
+        <img src="${producto.img}">
         <h3>${producto.nombre}</h3>
         <p>$${producto.precio}</p>
         <button>Agregar al carrito</button> 
