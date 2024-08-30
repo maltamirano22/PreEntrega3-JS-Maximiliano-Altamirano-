@@ -97,7 +97,7 @@ const productos = [
 },
 ]
 console.log(productos);
-const stockProductos = productos.filter(function(producto){
+const stockProductos = productos.filter((producto)=>{
     return producto.cantidad > 0;
     });
     console.log(stockProductos)
