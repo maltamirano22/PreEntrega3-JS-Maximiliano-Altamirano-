@@ -117,3 +117,4 @@ const stockProductos = productos.filter((producto)=>{
     return producto.cantidad > 0;
     });
     console.log(stockProductos)
+
