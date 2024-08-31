@@ -5,6 +5,10 @@
     buscarInput.addEventListener('input', () => {
         const filtro = buscarInput.value.toLowerCase();
 
+        if (filtro === '') {
+            resultadoDiv.textContent = 'Escribe para buscar un producto.';
+            return;
+        }
         const productoEncontrado = productos.find(producto => 
             producto.nombre.toLowerCase().includes(filtro)
         );
