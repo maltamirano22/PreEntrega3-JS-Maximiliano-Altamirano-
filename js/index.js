@@ -1,7 +1,7 @@
 
-const contenedorTarjetas = document.getElementById("productos-container");
-// CREA TARJETA PRODUCTO EN EL HTML
-function crearTarjetasProductosInicio (stockProductos){
+const contenedorTarjetas = document.getElementById('productos-container');
+// Crea tarjeta de producto en el DOM "Index"
+function crearTarjetasProductosInicio (stockProductos){     
     stockProductos.forEach(producto => {
         const nuevoProducto =  document.createElement("div");
         nuevoProducto.classList = "tarjeta-producto";
@@ -13,8 +13,10 @@ function crearTarjetasProductosInicio (stockProductos){
 
         `
         contenedorTarjetas.appendChild(nuevoProducto);
+        // Agrega producto al carrito.
         nuevoProducto.getElementsByTagName("button")[0].addEventListener("click",()=> agregarAlCarrito(producto));
         
     });
 }
 crearTarjetasProductosInicio(stockProductos);
+

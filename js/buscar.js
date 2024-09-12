@@ -4,7 +4,7 @@
     // Evento para detectar cambios en el campo de búsqueda
     buscarInput.addEventListener('input', () => {
         const filtro = buscarInput.value.toLowerCase();
-
+    
         if (filtro === '') {
             resultadoDiv.textContent = 'Escribe para buscar un producto.';
             return;
